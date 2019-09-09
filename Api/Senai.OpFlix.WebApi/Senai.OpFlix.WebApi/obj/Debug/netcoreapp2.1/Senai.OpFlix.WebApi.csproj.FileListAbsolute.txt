@@ -1,0 +1,14 @@
+E:\senai\OpFlix\Api\Senai.OpFlix.WebApi\Senai.OpFlix.WebApi\bin\Debug\netcoreapp2.1\Senai.OpFlix.WebApi.deps.json
+E:\senai\OpFlix\Api\Senai.OpFlix.WebApi\Senai.OpFlix.WebApi\bin\Debug\netcoreapp2.1\Senai.OpFlix.WebApi.runtimeconfig.json
+E:\senai\OpFlix\Api\Senai.OpFlix.WebApi\Senai.OpFlix.WebApi\bin\Debug\netcoreapp2.1\Senai.OpFlix.WebApi.runtimeconfig.dev.json
+E:\senai\OpFlix\Api\Senai.OpFlix.WebApi\Senai.OpFlix.WebApi\bin\Debug\netcoreapp2.1\Senai.OpFlix.WebApi.dll
+E:\senai\OpFlix\Api\Senai.OpFlix.WebApi\Senai.OpFlix.WebApi\obj\Debug\netcoreapp2.1\Senai.OpFlix.WebApi.csprojAssemblyReference.cache
+E:\senai\OpFlix\Api\Senai.OpFlix.WebApi\Senai.OpFlix.WebApi\obj\Debug\netcoreapp2.1\Senai.OpFlix.WebApi.csproj.CoreCompileInputs.cache
+E:\senai\OpFlix\Api\Senai.OpFlix.WebApi\Senai.OpFlix.WebApi\obj\Debug\netcoreapp2.1\Senai.OpFlix.WebApi.RazorAssemblyInfo.cache
+E:\senai\OpFlix\Api\Senai.OpFlix.WebApi\Senai.OpFlix.WebApi\obj\Debug\netcoreapp2.1\Senai.OpFlix.WebApi.RazorAssemblyInfo.cs
+E:\senai\OpFlix\Api\Senai.OpFlix.WebApi\Senai.OpFlix.WebApi\obj\Debug\netcoreapp2.1\Senai.OpFlix.WebApi.AssemblyInfoInputs.cache
+E:\senai\OpFlix\Api\Senai.OpFlix.WebApi\Senai.OpFlix.WebApi\obj\Debug\netcoreapp2.1\Senai.OpFlix.WebApi.AssemblyInfo.cs
+E:\senai\OpFlix\Api\Senai.OpFlix.WebApi\Senai.OpFlix.WebApi\obj\Debug\netcoreapp2.1\Senai.OpFlix.WebApi.RazorTargetAssemblyInfo.cache
+E:\senai\OpFlix\Api\Senai.OpFlix.WebApi\Senai.OpFlix.WebApi\bin\Debug\netcoreapp2.1\Senai.OpFlix.WebApi.pdb
+E:\senai\OpFlix\Api\Senai.OpFlix.WebApi\Senai.OpFlix.WebApi\obj\Debug\netcoreapp2.1\Senai.OpFlix.WebApi.dll
+E:\senai\OpFlix\Api\Senai.OpFlix.WebApi\Senai.OpFlix.WebApi\obj\Debug\netcoreapp2.1\Senai.OpFlix.WebApi.pdb

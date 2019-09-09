@@ -1,0 +1,348 @@
+{
+	"info": {
+		"_postman_id": "1c06937d-3244-4b91-a271-db6038c4805a",
+		"name": "Senai.OpFlix.WebApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Email\": \"erik@email.com\"\n\t,\"Senha\": \"123456\" \n}"
+						},
+						"url": {
+							"raw": "localhost:5000/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login.CadastrarCliente",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Nome\" : \"Arthur\"\n\t,\"Email\": \"arthur@email.com\"\n\t,\"Senha\": \"123456\" \n}"
+						},
+						"url": {
+							"raw": "localhost:5000/api/login/cadastrar",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"login",
+								"cadastrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login.CadastrarADM",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVyaWtAZW1haWwuY29tIiwiY2hhdmUiOiJ2YWxvciIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIyIiwiZXhwIjoxNTY4MDU5OTIyLCJpc3MiOiJPcEZsaXguV2ViQXBpIiwiYXVkIjoiT3BGbGl4LldlYkFwaSJ9.NHo0Z0WApyT-MdbFa9A-hQG2ZBQNSoxNS3As1C82L2g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Nome\" : \"Senar\"\n\t,\"Email\": \"sena@email.com\"\n\t,\"Senha\": \"123\" \n}"
+						},
+						"url": {
+							"raw": "localhost:5000/api/login/cadastraradm",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"login",
+								"cadastraradm"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lançamentos",
+			"item": [
+				{
+					"name": "ListarLancamentos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:5000/api/lancamento",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"lancamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizarLancamento",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"idLancamentos\": 5,\r\n        \"nome\": \"La Casa De Papel\",\r\n        \"sinopse\": \"Oito habilidosos ladrões se trancam na Casa da Moeda da Espanha com o ambicioso plano de realizar o maior roubo da história e levar com eles mais de 2 bilhões de euros...\",\r\n        \"duracao\": \"3 Temporadas\",\r\n        \"dataLancamento\": \"2019-07-19T00:00:00\",\r\n        \"idPlataforma\": 1,\r\n        \"idTipo\": 2,\r\n        \"idGenero\": 5,\r\n        \"classificacaoIndicativa\": \"16\",\r\n        \"idGeneroNavigation\": {\r\n            \"idGenero\": 5,\r\n            \"nome\": \"Suspense\",\r\n            \"lancamento\": []\r\n        }\r\n    },"
+						},
+						"url": {
+							"raw": "localhost:5000/api/lancamento",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"lancamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CadastrarLancamento",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \r\n        \"nome\": \"Os Incriveis\",\r\n        \"sinopse\": \"Teste Teste Teste\",\r\n        \"duracao\": \"1h 56min\",\r\n        \"dataLancamento\": \"2004-12-10T00:00:00\",\r\n        \"idPlataforma\": 1,\r\n        \"idTipo\": 2,\r\n        \"idGenero\": 5,\r\n        \"classificacaoIndicativa\": \"L\",\r\n        \r\n        }\r\n    },"
+						},
+						"url": {
+							"raw": "localhost:5000/api/lancamento",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"lancamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletarLancamento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/lancamento/13",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"lancamento",
+								"13"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categoria",
+			"item": [
+				{
+					"name": "Categoria.Listar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVyaWtAZW1haWwuY29tIiwiY2hhdmUiOiJ2YWxvciIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIyIiwiZXhwIjoxNTY4MDYyMjU5LCJpc3MiOiJPcEZsaXguV2ViQXBpIiwiYXVkIjoiT3BGbGl4LldlYkFwaSJ9.ZebNbqHnJJPctaCT-n4sGq-ZKbLD1Ji4YEYNBCTX_yM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/categoria",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categoria.Cadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVyaWtAZW1haWwuY29tIiwiY2hhdmUiOiJ2YWxvciIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIyIiwiZXhwIjoxNTY4MDYyMjU5LCJpc3MiOiJPcEZsaXguV2ViQXBpIiwiYXVkIjoiT3BGbGl4LldlYkFwaSJ9.ZebNbqHnJJPctaCT-n4sGq-ZKbLD1Ji4YEYNBCTX_yM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nome\": \"Teste\",\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:5000/api/categoria",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categoria.Atualizar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVyaWtAZW1haWwuY29tIiwiY2hhdmUiOiJ2YWxvciIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIyIiwiZXhwIjoxNTY4MDYyMjU5LCJpc3MiOiJPcEZsaXguV2ViQXBpIiwiYXVkIjoiT3BGbGl4LldlYkFwaSJ9.ZebNbqHnJJPctaCT-n4sGq-ZKbLD1Ji4YEYNBCTX_yM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"idGenero\": 13,\r\n        \"nome\": \"TesteTeste\"\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:5000/api/categoria",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"categoria"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
