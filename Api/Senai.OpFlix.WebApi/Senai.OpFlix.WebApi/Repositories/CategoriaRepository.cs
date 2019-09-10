@@ -11,8 +11,6 @@ namespace Senai.OpFlix.WebApi.Repositories
     public class CategoriaRepository : ICategoriaRepository
     {
         //-------------------//
-        private string StringConexao = "Data Source=localhost;Initial Catalog=T_InLock;User Id=sa;Pwd=132;";
-
         opflixContext ctx = new opflixContext();
         //-------------------//
 

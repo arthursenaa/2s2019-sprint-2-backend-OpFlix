@@ -13,5 +13,8 @@ namespace Senai.OpFlix.WebApi.Interfaces
         Lancamento ListarId(int Id);
         void AtualizarLancamento(Lancamento lancamento);
         void DeletarLancamento(int id);
+        List<Lancamento> BuscarPorDataC();
+        List<Lancamento> BuscarPorDataD();
+
     }
 }

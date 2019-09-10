@@ -40,7 +40,7 @@ namespace Senai.OpFlix.WebApi.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(new { mensagem = "Erro. Aguarde um momento." + ex.Message });
+                return BadRequest(new { mensagem = "Erro. Aguarde um momento. " + ex.Message });
             }
         }
 
@@ -56,10 +56,11 @@ namespace Senai.OpFlix.WebApi.Controllers
             catch (Exception ex)
             {
 
-                return BadRequest(new { mensagem = "Erro. Aguarde um momento." + ex.Message });
+                return BadRequest(new { mensagem = "Erro ao Cadastrar. Aguarde um momento. " + ex.Message });
             }
         }
 
+        
         [Authorize(Roles = "2")]
         [HttpDelete("{id}")]
         public IActionResult Deletar(int id)
@@ -68,5 +69,19 @@ namespace Senai.OpFlix.WebApi.Controllers
             return Ok();
         }
 
+        //Extra
+        [Authorize]
+        [HttpGet("DataC")]
+        public IActionResult BuscarPorData()
+        {
+            return Ok(LancamentoRepository.BuscarPorDataC());
+        }
+
+        [Authorize]
+        [HttpGet("DataD")]
+        public IActionResult BuscarPorDataD()
+        {
+            return Ok(LancamentoRepository.BuscarPorDataD());
+        }
     }
 }

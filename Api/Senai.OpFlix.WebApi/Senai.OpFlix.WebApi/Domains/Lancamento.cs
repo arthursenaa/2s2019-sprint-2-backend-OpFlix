@@ -10,9 +10,9 @@ namespace Senai.OpFlix.WebApi.Domains
         public string Sinopse { get; set; }
         public string Duracao { get; set; }
         public DateTime DataLancamento { get; set; }
-        public int? IdPlataforma { get; set; }
-        public int? IdTipo { get; set; }
-        public int? IdGenero { get; set; }
+        public int IdPlataforma { get; set; }
+        public int IdTipo { get; set; }
+        public int IdGenero { get; set; }
         public string ClassificacaoIndicativa { get; set; }
 
         public Genero IdGeneroNavigation { get; set; }
