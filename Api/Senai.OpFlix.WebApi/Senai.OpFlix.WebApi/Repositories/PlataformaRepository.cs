@@ -48,6 +48,11 @@ namespace Senai.OpFlix.WebApi.Repositories
         //1.1-) Filtrar Por Plataforma Nome
         public Plataforma ListarPorNome(string Nome)
         {
+            //var Nomep = Nome;
+
+            //var plataforma = ctx.Plataforma
+            //    .FromSql("SELECT * FROM Plataforma WHERE Plataforma Like '%{0}%'", Nomep)
+            //    .ToList();      
             return ctx.Plataforma.Include(x => x.Lancamento).FirstOrDefault(x => x.Plataforma1 == Nome);
         }
     }

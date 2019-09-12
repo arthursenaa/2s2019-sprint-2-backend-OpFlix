@@ -66,17 +66,19 @@ namespace Senai.OpFlix.WebApi.Controllers
         //EXTRA
 
         //1-) Filtrar  Plataforma Por Id
-        [Authorize]
+        //[Authorize]
         [HttpGet("{id}")]
         public IActionResult ListarPorId(int Id)
         {
             return Ok(PlataformaRepository.ListarId(Id));
         }
         //1.1-) Filtrar Plataforma Por Nome 
-        [Authorize]
+        //[Authorize]
         [HttpGet("Nome/{nome}")]
         public IActionResult ListarPorNome(string Nome)
         {
+            //PlataformaRepository.ListarPorNome(Nome);
+            
             return Ok(PlataformaRepository.ListarPorNome(Nome));
         }
     }
