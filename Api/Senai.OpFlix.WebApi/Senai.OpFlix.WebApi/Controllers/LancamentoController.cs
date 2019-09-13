@@ -18,6 +18,8 @@ namespace Senai.OpFlix.WebApi.Controllers
 
         LancamentoRepository LancamentoRepository = new LancamentoRepository();
 
+
+
         [Authorize]
         [HttpGet]
         public IActionResult Listar()
